@@ -106,7 +106,9 @@ footer {
     grid-template-areas:
     "masthead1 masthead2 masthead3"
     "banner banner banner"
-    "viewing gravel symbolism";
+    "section section section"
+    "viewing gravel symbolism"
+    "footer footer footer";
     grid-template-columns: repeat(3, 1fr);
   }
 
@@ -133,6 +135,26 @@ footer {
   h1, h2 {
     grid-area: masthead1;
   }
+
+  section {
+    grid-area: section;
+    grid-column: 1 / 4;
+  }
+
+  footer {
+    grid-area: footer;
+    grid-column: 1 / 4;
+  }
+.viewing {
+  grid-area: viewing;
+}
+
+.gravel {
+  grid-area: gravel;
+}
+
+.symbolism {
+  grid-area: symbolism;
 }
 
 }
