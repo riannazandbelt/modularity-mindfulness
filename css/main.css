@@ -104,12 +104,13 @@ footer {
   body{
     display: grid;
     grid-template-areas:
-    "masthead1 masthead2 masthead3"
-    "banner banner banner"
-    "section section section"
-    "viewing gravel symbolism"
-    "footer footer footer";
+      "masthead1 masthead2 masthead3"
+      "banner banner banner"
+      "section section section"
+      "viewing gravel symbolism"
+      "footer footer footer";
     grid-template-columns: repeat(3, 1fr);
+    padding-top: 1rem;
   }
 
   header{
@@ -152,23 +153,23 @@ footer {
     grid-column: 1 / 4;
   }
 
-.viewing {
-  grid-area: viewing;
-  grid-column: 1;
-  grid-row: 4
-}
+  .viewing {
+    grid-area: viewing;
+    grid-column: 1;
+    grid-row: 4;
+  }
 
-.gravel {
-  grid-area: gravel;
-  grid-column: 2;
-  grid-row: 4
-}
+  .gravel {
+    grid-area: gravel;
+    grid-column: 2;
+    grid-row: 4;
+  }
 
-.symbolism {
-  grid-area: symbolism;
-  grid-column: 3;
-  grid-row: 4
-}
+  .symbolism {
+    grid-area: symbolism;
+    grid-column: 3;
+    grid-row: 4;
+  }
 
 }
 
