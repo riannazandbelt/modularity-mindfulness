@@ -30,9 +30,10 @@ img {
 }
 
 hr {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   margin-bottom: 1rem;
   color: #e2e2e2;
+  height: .2rem;
 }
 
 ul {
@@ -84,8 +85,10 @@ h4 {
   margin-top: 0;
 }
 
-a {
-  border: 1px solid #3783a3;
+main a {
+  border-color: #3783a3;
+  border-style: solid;
+  border-width: .2rem;
   border-radius: .3em;
   padding: .5em 1em .6em;
   display: block;
@@ -94,4 +97,48 @@ a {
 
 footer {
   text-align: center;
+}
+
+@media only screen and (min-width: 38em) {
+
+  body{
+    display: grid;
+    grid-template-areas:
+    "masthead1 masthead2 masthead3"
+    "banner banner banner"
+    "viewing gravel symbolism";
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  header{
+    display: contents;
+    grid-template-columns: repeat(3, 1fr)
+  }
+
+  section hr {
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+
+  section h2,
+  section p {
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+  .banner {
+    grid-area: banner;
+    grid-column: 1 / 4;
+  }
+
+  h1, h2 {
+    grid-area: masthead1;
+  }
+}
+
+}
+
+@media only screen and (min-width: 60em){
+
+
+
 }
