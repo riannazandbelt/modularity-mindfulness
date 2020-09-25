@@ -117,6 +117,20 @@ footer {
     grid-template-columns: repeat(3, 1fr)
   }
 
+  .banner {
+    grid-area: banner;
+    grid-column: 1 / 4;
+  }
+
+  h1, h2 {
+    grid-area: masthead1;
+  }
+
+  nav {
+    grid-area: masthead3;
+    grid-column: 2 / 4;
+  }
+
   section hr {
     margin-left: 2em;
     margin-right: 2em;
@@ -126,14 +140,6 @@ footer {
   section p {
     margin-left: 2em;
     margin-right: 2em;
-  }
-  .banner {
-    grid-area: banner;
-    grid-column: 1 / 4;
-  }
-
-  h1, h2 {
-    grid-area: masthead1;
   }
 
   section {
@@ -145,16 +151,23 @@ footer {
     grid-area: footer;
     grid-column: 1 / 4;
   }
+
 .viewing {
   grid-area: viewing;
+  grid-column: 1;
+  grid-row: 4
 }
 
 .gravel {
   grid-area: gravel;
+  grid-column: 2;
+  grid-row: 4
 }
 
 .symbolism {
   grid-area: symbolism;
+  grid-column: 3;
+  grid-row: 4
 }
 
 }
