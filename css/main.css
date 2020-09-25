@@ -4,6 +4,7 @@ html {
   text-size-adjust: 100%;
   font-family: "Noto Sans", sans-serif;
   line-height: 1.5;
+  color: #000;
 }
 
 *,
@@ -19,10 +20,8 @@ html {
 
 body {
   margin: 0;
-  display: grid;
-  grid-template-areas:
-    "banner banner"
-  grid-template-columns: repeat(2, 1fr)
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 img {
@@ -30,9 +29,9 @@ img {
   width: 100%;
 }
 
-header {
-  display: contents;
-  grid-template-columns: repeat(2, 1fr)
+hr {
+  margin-top: 1rem;
+  color: #e2e2e2;
 }
 
 ul {
@@ -40,8 +39,41 @@ ul {
   color: #3783a3;
   display: flex;
   text-decoration: underline;
+  justify-content: space-around;
+  padding-left: 0;
 }
 
 a {
   color: #3783a3;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 0;
+}
+
+h2 {
+  margin: 0 auto;
+  font-size: 1.125rem;
+}
+
+ul {
+  margin-top: 0;
+  font-size: 1.125rem;
+}
+
+section h2 {
+  font-size: 2rem;
+  padding-left: .5em;
+  padding-right: .5em;
+}
+
+section p {
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  text-align: center;
 }
